@@ -1,0 +1,53 @@
+<!-- activity_unknown_caller.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#109010"
+    android:padding="16dp"
+    tools:context=".SafeActivity">
+
+    <ImageView
+        android:id="@+id/safe_shield"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/safe_shield" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/safe_shield"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/SafeButton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:background="@color/yellow"
+            android:text="안전합니다"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintBounds" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/HomeButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:background="@color/yellow"
+            android:text="홈으로"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:onClick="onHomeButtonClick" />
+
+
+    </LinearLayout>
+</RelativeLayout>
